@@ -32,4 +32,7 @@ def read_file(file):
 def write_output(vehicles, output_file):
 	out = open(output_file, "w")
 	for v in range(len(vehicles)):
-		out.write(str(v) + " " +  + "\n")
+		out.write(str(v))
+		for r in vehicles[v][0]:
+			out.write(" " + str(r[5]))
+		out.write("\n")
