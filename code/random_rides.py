@@ -45,7 +45,9 @@ def find_possible_rides(pos, t, rides):
     rides_res = list()
     for r in rides:
         time = distance(pos, r[0]) + r[4]
-        if t + time < r[3]:
+        if time >= 50:
+            continue
+        if t + time + 1 < r[3]:
             rides_res.append(r)
     return rides_res
 
