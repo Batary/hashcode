@@ -40,4 +40,4 @@ def score(sol):
 	return score
 
 
-boucle("../instances/c_no_hurry.in")
+boucle("../instances/e_high_bonus.in")
