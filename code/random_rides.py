@@ -23,7 +23,7 @@ def generate_random_rides(nb_vehicles, rides, t_max, bonus):
             ride = rand.choice(sol)
             new_pos = ride[1]
             new_score = score + ride[4]
-            if t + distance(pos, ride[0]) == ride[2]:
+            if t + distance(pos, ride[0]) <= ride[2]:
                 new_score += bonus
             new_t = ride_final(pos, t, ride)
             if new_t > t_max:
