@@ -24,8 +24,8 @@ def read_file(file):
 	
 # 3 4 2 3 2 10
 # rides[0] = [(0, 0), (1, 3), 2, 9, 4, 0]
-rows, cols, nbVehicles, maxRides, bonus, maxSteps, rides  = read_file("../instances/a_example.in")
-print(rides)
+# rows, cols, nbVehicles, maxRides, bonus, maxSteps, rides  = read_file("../instances/a_example.in")
+# print(rides)
 
 
 
