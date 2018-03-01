@@ -19,7 +19,7 @@ def read_file(file):
 		lines[a] = [(l[0], l[1]), (l[2], l[3]), l[4], l[5], abs(l[0] - l[2]) + abs(l[1] - l[3]), a ]
 	
 	# print(lines)
-	
+	f.close()
 	return tt[0], tt[1], tt[2], tt[3], tt[4], tt[5], lines
 	
 # 3 4 2 3 2 10
@@ -32,7 +32,8 @@ def read_file(file):
 def write_output(vehicles, output_file):
 	out = open(output_file, "w")
 	for v in range(len(vehicles)):
-		out.write(str(v))
+		out.write(str(len(vehicles[v][0])))
 		for r in vehicles[v][0]:
 			out.write(" " + str(r[5]))
 		out.write("\n")
+	out.close()
